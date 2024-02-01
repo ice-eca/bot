@@ -19,7 +19,7 @@ def enter_district(message):
     data[message.chat.id] = {'stage':0}
     markup = types.InlineKeyboardMarkup()
     itembtn1 = types.InlineKeyboardButton(text='Гагарина, 21', callback_data='Гагарина, 21')
-    itembtn2 = types.InlineKeyboardButton(text='Восточная 3А', callback_data='Восточная 3А')
+    itembtn2 = types.InlineKeyboardButton(text='Восточная 3А', callback_data='Восточная, 3А')
     
     markup.add(itembtn1, itembtn2)
     bot.send_photo(message.chat.id, open('kiber1.png', 'rb'))
